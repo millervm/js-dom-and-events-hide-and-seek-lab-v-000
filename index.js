@@ -21,9 +21,8 @@ function deepestChild() {
   let child = grandNode.children[0];
   let last = false;
   until (last) {
-    let newChild = child.children[0];
-    if (!!newChild) {
-      child = newChild;
+      if (!!child.children[0]) {
+      child = child.children[0];
     } else {
       last = true;
     };
